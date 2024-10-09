@@ -1,5 +1,13 @@
 body{
-    width:1270px;
+    width:1280px;
     border:1px solid #000;
-    margin:0 auto
+    margin:0 auto;
+}
+h1{
+    font-size:18px;
+    text-align:center;
+}
+p{
+    font-size:12px;
+    text-align:center;
 }
