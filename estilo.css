@@ -2,19 +2,21 @@
   background-image: url("cabecera.png");
   background-size: cover;
    height: 100vh;
-
+overflow:hidden;
 }
 div{
  position:absolute;
  bottom:10px;
 }
 h1{
+ background-color:gray;
      font-size:18px;
      text-align:center;
- color:white;
+  color:white;
 }
 p{
     font-size:12px;
     text-align:center;
- color:white;
+  color:white;
+  background-color:gray;
 }
