@@ -1,11 +1,10 @@
-body{
-    width:80%;
-    border:1px solid #000;
-    margin:0 auto
+ body {
+  background-image: url("cabecera.png");
+  background-size: cover;
+   height: 100vh;
+
 }
-img{
-    width:100%
-}
+
 h1{
     font-size:18px;
     text-align:center;
