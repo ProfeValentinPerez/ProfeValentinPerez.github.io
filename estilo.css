@@ -4,12 +4,17 @@
    height: 100vh;
 
 }
-
+div{
+ position:absolute;
+ bottom:10px;
+}
 h1{
-    font-size:18px;
-    text-align:center;
+     font-size:18px;
+     text-align:center;
+ color:white;
 }
 p{
     font-size:12px;
     text-align:center;
+ color:white;
 }
