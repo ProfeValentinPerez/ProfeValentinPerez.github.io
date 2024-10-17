@@ -1,5 +1,5 @@
  body {
-  background-image: url("cabecera.png");
+  background-image: url("imagenes/cabecera.png");
   background-size: cover;
    height: 100vh;
 overflow:hidden;
@@ -25,3 +25,11 @@ p{
   margin:auto;
  padding: 0 10px;
 }
+footer{
+  height:30px;
+  position:absolute;
+  bottom:40px;
+  text-align:right;
+
+}
+
