@@ -1,11 +1,13 @@
-  body {
+t  body {
   background-image: url("imagenes/cabecera.png");
   background-size: cover;
    height: 100vh;
 overflow:hidden;
 }
 main{
-
+width:500px;
+  height:500px;
+  overflow:scroll;
  margin:auto;
 }
 h1{
