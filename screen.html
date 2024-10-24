@@ -7,6 +7,7 @@
     <title>Screen</title>
     <script>
         window.onload=function(){
+            document.documentElement.requestFullscreen()
             texto.innerHTML+="ancho"+screen.width+"altura"+screen.height+"Ancho sin barras"+screen.availWidth+"altura sin barras"+screen.availHeight+"Profundidad de color"+screen.colorDepth+"Profundidad de color en bits"+screen.pixelDepth
             texto.innerHTML=`<p>Ancho: ${screen.width}</p>
             <p>Altura: ${screen.height}</p>
