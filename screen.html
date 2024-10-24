@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex,nofollow">
+    <title>Screen</title>
+    <script>
+        window.onload=function(){
+            texto.innerHTML+="ancho"+screen.width+"altura"+screen.height+"Ancho sin barras"+screen.availWidth+"altura sin barras"+screen.availHeight+"Profundidad de color"+screen.colorDepth+"Profundidad de color en bits"+screen.pixelDepth
+            texto.innerHTML=`<p>Ancho: ${screen.width}</p>
+            <p>Altura: ${screen.height}</p>
+            <p>Ancho sin barras: ${screen.availWidth}</p>
+            <p>Altura sin barras: ${screen.availHeight}</p>
+            <p>Profundidad de color: ${screen.colorDepth}</p>
+            <p>Profundidad de color en bits: ${screen.pixelDepth}</p>
+            <p>Orientacón: ${ screen.orientation.type}</p>
+            <p>Orientacón: ${ screen.orientation.angle}</p>`
+
+            screen.orientation.lock('landscape')
+  .then(() => {
+    texto.innerHTML += "<p>Orientación bloqueada correctamente.</p>";
+  })
+  .catch((error) => {
+    texto.innerHTML += "<p>Al intentar bloquear la orientación se produjo el error: " + error.message + "</p>";
+  });
+  /*El metodo lock lanza una promesa y por eso no puede manejare el error con try/catch sino que hay que hacerlo con el then de promesas*/
+  
+
+        
+
+        }
+    </script>
+</head>
+<body>
+<div id="texto"></div>
+</body>
+</html>
