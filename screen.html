@@ -6,7 +6,7 @@
     <meta name="robots" content="noindex,nofollow">
     <title>Screen</title>
     <script>
-               window.onload=mostrar;
+        window.onload= mostrar;
         screen.orientation.addEventListener('change',mostrar);
           function mostrar(){
             /* EL bloqueo de orientación solo funciona con pantalla completa
@@ -28,15 +28,32 @@
   .catch((error) => {
     texto.innerHTML += "<p>Al intentar bloquear la orientación se produjo el error: " + error.message + "</p>";
   });
-  /*El metodo lock lanza una promesa y por eso no puede manejare el error con try/catch sino que hay que hacerlo con el then de promesas*/
+  /*El metodo lock lanza una promesa y por eso no puede manejare el error con try/catch, sino que hay que hacerlo con el then de promesas*/
   
 
         
 
         }
+
+
+        function pantallaCompleta() {
+  const elem = document.documentElement; 
+console.log(elem)
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen(); // Método estándar
+  } else if (elem.mozRequestFullScreen) { // Firefox
+    elem.mozRequestFullScreen();
+  } else if (elem.webkitRequestFullscreen) { // Chrome, Safari y Opera
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { // IE/Edge
+    elem.msRequestFullscreen();
+  }
+ 
+}
     </script>
 </head>
 <body>
+<p onclick="pantallaCompleta()">Pantalla completa</p>
 <div id="texto"></div>
 </body>
 </html>
