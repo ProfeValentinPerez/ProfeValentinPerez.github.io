@@ -1,8 +1,8 @@
 body {
   background-image: url("imagenes/cabecera.png");
   background-size: cover;
-  width: 100vmax;
-  height: 100vmax;
+  width: 100%;
+  height: 100vh;
 }
 section{
   position:absolute;
@@ -41,7 +41,7 @@ section a{
 }
 h1{
   background-color:gray;
-     font-size:1vmax;
+     font-size:24px;
      text-align:center;
   color:white;
  margin:auto;
