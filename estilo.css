@@ -1,8 +1,8 @@
 body {
   background-image: url("imagenes/cabecera.png");
   background-size: cover;
-   height: 100vh;
-overflow:hidden;
+  width: 100vmax;
+  height: 100vmax;
 }
 section{
   position:absolute;
