@@ -1,4 +1,3 @@
-alert("leches")
 (function(){const sl=document.createElement("link").relList;if(sl&&sl.supports&&sl.supports("modulepreload"))return;for(const G of document.querySelectorAll('link[rel="modulepreload"]'))m(G);new MutationObserver(G=>{for(const F of G)if(F.type==="childList")for(const cl of F.addedNodes)cl.tagName==="LINK"&&cl.rel==="modulepreload"&&m(cl)}).observe(document,{childList:!0,subtree:!0});function W(G){const F={};return G.integrity&&(F.integrity=G.integrity),G.referrerPolicy&&(F.referrerPolicy=G.referrerPolicy),G.crossOrigin==="use-credentials"?F.credentials="include":G.crossOrigin==="anonymous"?F.credentials="omit":F.credentials="same-origin",F}function m(G){if(G.ep)return;G.ep=!0;const F=W(G);fetch(G.href,F)}})();var Wc={exports:{}},Ee={};/**
  * @license React
  * react-jsx-runtime.production.js
