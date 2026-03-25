@@ -64,9 +64,6 @@ footer{
 }
 
 @media (max-width:780px){
-  body{
-  overflow-y:auto;
-}
   main{
     display:flex;
     flex-direction:column;
@@ -78,5 +75,15 @@ footer{
     height:auto;
 
   }
-
+body{
+  overflow-y:auto;
+}
+footer{
+  position:initial;
+  text-align:center;
+  background-color:white;
+  margin:0 20px 20px 20px;
+  border-radius: 25px;
+  padding-top:10px;
+}
 }
