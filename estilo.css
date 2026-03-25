@@ -65,7 +65,7 @@ footer{
 
 @media (max-width:780px){
   body{
-  overflow:auto;
+  overflow-y:auto;
 }
   main{
     display:flex;
