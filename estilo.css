@@ -64,6 +64,9 @@ footer{
 }
 
 @media (max-width:780px){
+  body{
+  overflow:auto;
+}
   main{
     display:flex;
     flex-direction:column;
