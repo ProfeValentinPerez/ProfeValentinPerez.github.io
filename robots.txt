@@ -1,3 +1,4 @@
 User-agent:*
 Allow:/
 Disallow:/privado
+Sitemap: https://profevalentinperez.github.io/sitemap.xml
