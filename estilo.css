@@ -61,6 +61,10 @@ footer{
   position:absolute;
   bottom:40px;
   text-align:right;
+  color:white;
+}
+footer img{
+  vertical-align:bottom;
 }
 
 @media (max-width:780px){
